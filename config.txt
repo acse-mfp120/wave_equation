@@ -1,0 +1,47 @@
+//****************************************************************************
+// Simulation Config file
+// Miguel Pereira, ACSE-6 Assigment 2: MPI Wave Simulation
+//****************************************************************************
+//
+// 1. Boundary condition
+// Choose between 'dir': Dirichlet, 'neu':neumann
+bc:dir
+//----------------------------------------------------------------------------
+// 2. Fixed or Periodic edges 
+// Choose between 'fixed' or 'periodic'. Periodic option only available
+// when using more than one proc in the direction of the periodicity.
+// (Note: if periodic, will invalidate the above for the given dimension)
+x:fixed
+y:fixed
+//----------------------------------------------------------------------------
+// 3. Grid Size
+// (Note: no obligation to use square grid)
+x:180
+y:180
+//----------------------------------------------------------------------------
+// 4. Grid Resolution
+// How small should the smallest quantised unit on each of the physical
+// dimensions be?
+dx:0.5
+dy:0.5
+//----------------------------------------------------------------------------
+// 5. Time resolution
+// Choose a value < 0.1 * min(dx, dy) as a rule of thumb to ensure convergence
+t_res:0.01
+//----------------------------------------------------------------------------
+// 6. Save output period [s]
+t_out:0.08
+//----------------------------------------------------------------------------
+// 7. C parameter, the speed of the wave
+c:10
+//----------------------------------------------------------------------------
+// 8. Total Simulation Runtime [s]
+t_max:40
+//----------------------------------------------------------------------------
+// 9. Initial Conditions
+// Can specify any number of initial radial disturbances at location (x,y,rad)
+// To add more disturbances, simply create additional rows with same structure
+// The maximum number of initial disturbances one can set is 100.
+ic:(30,30,20)
+ic:(120,120,30)
+//----------------------------------------------------------------------------
