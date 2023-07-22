@@ -19,7 +19,6 @@ Set config.txt to choose between:
 - Max runtime
 
 ## Example Outputs
-
-
-
-## Performance
+Intialised with single radial disturbance         |  Initialised with two radial disturbances
+:-------------------------:|:-------------------------:
+![](https://github.com/acse-mfp120/wave_equation/blob/assets/visualised_results/4proc_output_360.0_360.0_40s.gif)  |  ![](https://github.com/acse-mfp120/wave_equation/blob/assets/visualised_results/4proc_dir_output_360.0_360.0_40s.gif)
